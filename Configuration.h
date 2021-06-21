@@ -816,9 +816,9 @@
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
 
-// AANGEPAST: obv meting van extruder. Origineel: 93. Meting 4,6mm te weinig extruded
-// Link: https://www.youtube.com/watch?v=OeLPTr6v6LU
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 97.6 }
+// AANGEPAST: obv meting van extruder. Origineel: 93. Meting 2,6mm te weinig extruded
+// Link: https://www.youtube.com/watch?v=OeLPTr6v6LU en https://www.youtube.com/watch?v=lH-RrjtiC8M
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 95.6 }
 
 /**
  * Default Max Feed Rate (mm/s)
