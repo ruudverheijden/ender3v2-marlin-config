@@ -524,9 +524,12 @@
     #define DEFAULT_Kd_LIST {  78.81,  78.81 }
   #else
     // Ender 3 v2
-    #define DEFAULT_Kp  28.72
-    #define DEFAULT_Ki   2.62
-    #define DEFAULT_Kd  78.81
+
+    // AANGEPAST: obv PID autotune (command: M303 E0 S200 U1), origineel: Kp 28.72, Ki 2.62, Kd 78.81
+    // Link: https://teachingtechyt.github.io/calibration.html#pid
+    #define DEFAULT_Kp  22.74
+    #define DEFAULT_Ki   1.62
+    #define DEFAULT_Kd  79.73
   #endif
 #endif // PIDTEMP
 
@@ -564,9 +567,12 @@
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
   // Ender 3 V2
-  #define DEFAULT_bedKp 462.10
-  #define DEFAULT_bedKi  85.47
-  #define DEFAULT_bedKd 624.59
+
+  // AANGEPAST: obv Bed PID autotune (command: M303 E-1 S60 U1), origineel: bedKp 462.10, bedKi 85.47, bedKd 624.59
+  // Link: https://teachingtechyt.github.io/calibration.html#pid
+  #define DEFAULT_bedKp 153.13
+  #define DEFAULT_bedKi  27.29
+  #define DEFAULT_bedKd 572.86
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
