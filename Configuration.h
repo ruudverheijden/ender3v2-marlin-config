@@ -609,9 +609,9 @@
     
     // AANGEPAST: obv PID autotune (command: M303 E0 S200 U1), origineel: Kp 28.72, Ki 2.62, Kd 78.81
     // Link: https://teachingtechyt.github.io/calibration.html#pid
-    #define DEFAULT_Kp  22.74
-    #define DEFAULT_Ki   1.62
-    #define DEFAULT_Kd  79.73
+    #define DEFAULT_Kp 25.71
+    #define DEFAULT_Ki 1.91
+    #define DEFAULT_Kd 86.55
   #endif
 #endif // PIDTEMP
 
